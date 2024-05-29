@@ -4,5 +4,6 @@
   "prettier.documentSelectors": ["**/*.sol"],
   "solidity.formatter": "prettier",
   "typescript.tsdk": "node_modules/typescript/lib",
-  "solidity.defaultCompiler": "remote"
+  "solidity.defaultCompiler": "remote",
+  "solidity.compileUsingRemoteVersion": "v0.8.19+commit.7dd6d404"
 }

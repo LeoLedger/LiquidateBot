@@ -3,6 +3,7 @@ import "hardhat-deploy";
 import type { HardhatUserConfig } from "hardhat/config";
 import { vars } from "hardhat/config";
 import type { NetworkUserConfig } from "hardhat/types";
+import "uniswap-v3-deploy-plugin";
 
 import "./tasks/accounts";
 import "./tasks/lock";
@@ -61,7 +62,7 @@ const config: HardhatUserConfig = {
       mainnet: vars.get("ETHERSCAN_API_KEY", ""),
       optimisticEthereum: vars.get("OPTIMISM_API_KEY", ""),
       polygon: vars.get("POLYGONSCAN_API_KEY", ""),
-      polygonMumbai: vars.get("POLYGONSCAN_API_KEY", ""),
+      polygonMumbai: vars.get("POLYGONSCAN_API_KEY", "1H4X6V51IWYRBJM1RAA986HP6EB9BY992U"),
       sepolia: vars.get("ETHERSCAN_API_KEY", ""),
     },
   },
@@ -85,14 +86,14 @@ const config: HardhatUserConfig = {
       chainId: chainIds.ganache,
       url: "http://localhost:8545",
     },
-    arbitrum: getChainConfig("arbitrum-mainnet"),
-    avalanche: getChainConfig("avalanche"),
-    bsc: getChainConfig("bsc"),
-    mainnet: getChainConfig("mainnet"),
-    optimism: getChainConfig("optimism-mainnet"),
+    // arbitrum: getChainConfig("arbitrum-mainnet"),
+    // avalanche: getChainConfig("avalanche"),
+    // bsc: getChainConfig("bsc"),
+    // mainnet: getChainConfig("mainnet"),
+    // optimism: getChainConfig("optimism-mainnet"),
     "polygon-mainnet": getChainConfig("polygon-mainnet"),
-    "polygon-mumbai": getChainConfig("polygon-mumbai"),
-    sepolia: getChainConfig("sepolia"),
+    // "polygon-mumbai": getChainConfig("polygon-mumbai"),
+    // sepolia: getChainConfig("sepolia"),
   },
   paths: {
     artifacts: "./artifacts",

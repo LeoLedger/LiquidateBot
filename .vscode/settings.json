@@ -5,5 +5,7 @@
   "solidity.formatter": "prettier",
   "typescript.tsdk": "node_modules/typescript/lib",
   "solidity.defaultCompiler": "remote",
-  "solidity.compileUsingRemoteVersion": "v0.8.19+commit.7dd6d404"
+  "solidity.compileUsingRemoteVersion": "v0.7.6+commit.7338295f",
+  "solidity.packageDefaultDependenciesContractsDirectory": "",
+  "solidity.packageDefaultDependenciesDirectory": "node_modules"
 }

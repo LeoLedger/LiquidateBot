@@ -1,9 +1,7 @@
 {
-  "extends": "solhint:recommended",
-  "plugins": ["prettier"],
   "rules": {
     "code-complexity": ["error", 8],
-    "compiler-version": ["error", ">=0.7.6"],
+    "compiler-version": ["error", ">=0.5.0"],
     "func-visibility": ["error", { "ignoreConstructors": true }],
     "max-line-length": ["error", 120],
     "named-parameters-mapping": "warn",
@@ -12,7 +10,7 @@
     "prettier/prettier": [
       "error",
       {
-        "endOfLine": "auto"
+        "endOfLine": "crlf"
       }
     ]
   }

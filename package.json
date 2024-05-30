@@ -1,6 +1,7 @@
 {
   "name": "@LeoLedger/LiquidateBot",
-  "description": "flashswap  and liquidate working for uniswap",
+  "description": "flashswap and liquidate working for uniswap",
+  "license": "MIT",
   "version": "1.0.0",
   "author": {
     "name": "LeoLedger",
@@ -31,7 +32,7 @@
     "hardhat-deploy": "^0.12.1",
     "hardhat-gas-reporter": "^1.0.9",
     "lodash": "^4.17.21",
-    "mocha": "^10.2.0",
+    "mocha": "^10.4.0",
     "prettier": "^3.1.1",
     "prettier-plugin-solidity": "^1.2.0",
     "rimraf": "^5.0.5",
@@ -41,7 +42,12 @@
     "ts-generator": "^0.1.1",
     "ts-node": "^10.9.2",
     "typechain": "^8.3.2",
-    "typescript": "^5.3.3"
+    "typescript": "^5.3.3",
+    "aws-sdk": "^2.1545.0",
+    "axios": "^1.6.5",
+    "bignumber.js": "^4.0.4",
+    "winston": "^3.11.0",
+    "winston-cloudwatch": "^6.2.0"
   },
   "files": [
     "contracts"
@@ -77,9 +83,10 @@
     "typechain": "cross-env TS_NODE_TRANSPILE_ONLY=true hardhat typechain"
   },
   "dependencies": {
-    "@openzeppelin/contracts": "^5.0.2",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@openzeppelin/contracts": "^3.4.0",
     "@uniswap/v3-core": "^1.0.1",
-    "@uniswap/v3-periphery": "^1.4.4",
+    "@uniswap/v3-periphery": "^1.0.1",
     "bun": "^1.1.10",
     "uniswap-v3-deploy-plugin": "^0.1.0",
     "yarn": "^1.22.22"

@@ -12,5 +12,16 @@
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",
     "hardhat": "^2.22.5"
+  },
+  "dependencies": {
+    "@aws-sdk/client-secrets-manager": "^3.596.0",
+    "@openzeppelin/contracts": "^5.0.2",
+    "@uniswap/v3-core": "^1.0.1",
+    "@uniswap/v3-periphery": "^1.4.4",
+    "aws-sdk": "^2.1641.0",
+    "axios": "^1.7.2",
+    "bignumber.js": "^9.1.2",
+    "winston": "^3.13.0",
+    "winston-cloudwatch": "^6.3.0"
   }
 }

@@ -1,27 +1,18 @@
 {
-  "name": "liquidatebot",
-  "version": "1.0.0",
-  "description": "[gitpod]: https://gitpod.io/#https://github.com/paulrberg/hardhat-template\r [gitpod-badge]: https://img.shields.io/badge/Gitpod-Open%20in%20Gitpod-FFB45B?logo=gitpod\r [gha]: https://github.com/paulrberg/hardhat-template/actions\r [gha-badge]: https://github.com/paulrberg/hardhat-template/actions/workflows/ci.yml/badge.svg\r [hardhat]: https://hardhat.org/\r [hardhat-badge]: https://img.shields.io/badge/Built%20with-Hardhat-FFDB1C.svg\r [license]: https://opensource.org/licenses/MIT\r [license-badge]: https://img.shields.io/badge/License-MIT-blue.svg",
-  "main": "hardhat.config.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "name": "LiquidationBot",
   "devDependencies": {
-    "@nomicfoundation/hardhat-toolbox": "^5.0.0",
-    "hardhat": "^2.22.5"
+    "@nomicfoundation/hardhat-toolbox": "^3.0.0",
+    "hardhat": "^2.19.0"
   },
   "dependencies": {
-    "@aws-sdk/client-secrets-manager": "^3.596.0",
-    "@openzeppelin/contracts": "^5.0.2",
+    "@aws-sdk/client-secrets-manager": "^3.501.0",
+    "@openzeppelin/contracts": "^3.4.0",
+    "@uniswap/v3-periphery": "^1.0.1",
     "@uniswap/v3-core": "^1.0.1",
-    "@uniswap/v3-periphery": "^1.4.4",
-    "aws-sdk": "^2.1641.0",
-    "axios": "^1.7.2",
-    "bignumber.js": "^9.1.2",
-    "winston": "^3.13.0",
-    "winston-cloudwatch": "^6.3.0"
+    "aws-sdk": "^2.1545.0",
+    "axios": "^1.6.5",
+    "bignumber.js": "^4.0.4",
+    "winston": "^3.11.0",
+    "winston-cloudwatch": "^6.2.0"
   }
 }
